@@ -20,6 +20,24 @@ class MethodsTest {
         int target2 = 5;
         int result2 = Methods.binarySearch(array2, target2);
         assertEquals(4, result2);
+        int[] array3 = {};
+        int target3 = 1;
+        int result3 = Methods.binarySearch(array3, target3);
+        assertEquals(-1, result3);
+        int[] array4 = {1};
+        int target4 = 1;
+        int result4 = Methods.binarySearch(array4, target4);
+        assertEquals(0, result4);
+        int[] array5 = {1, 2, 3, 4, 5, 6, 7, 8};
+        int target5 = 9;
+        int result5 = Methods.binarySearch(array5, target5);
+        assertEquals(-1, result5);
+        int target6 = 7;
+        int result6 = Methods.binarySearch(array2, target6);
+        assertEquals(6, result6);
+        int target7 = 2;
+        int result7 = Methods.binarySearch(array2, target7);
+        assertEquals(1, result7);
 
     }
 
@@ -81,17 +99,17 @@ class MethodsTest {
         assertArrayEquals(arrayNotDuplicates, result);
         int[] array5 = new int[0];
         int n = array5.length;
-        if(n==0){
-        int[] result2 = Methods.removeDuplicates(array5);
-        assertArrayEquals(array5, result2);
-    }
+        if (n == 0) {
+            int[] result2 = Methods.removeDuplicates(array5);
+            assertArrayEquals(array5, result2);
+        }
         int[] array6 = new int[1];
         int n2 = array6.length;
-        if(n2==1){
+        if (n2 == 1) {
             int[] result3 = Methods.removeDuplicates(array6);
             assertArrayEquals(array6, result3);
         }
 
-}
+    }
 
 }

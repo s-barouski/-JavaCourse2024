@@ -16,9 +16,9 @@ public class Main {
         int result2 = binarySearch(array2, target2);
         System.out.println("Индекс элемента: " + result2);
 
-        int [] array3 = {5,3,8,4,2};
+        int[] array3 = {5, 3, 8, 4, 2};
         int[] bubbleSort = bubbleSort(array3);
-        for (int num: bubbleSort){
+        for (int num : bubbleSort) {
             System.out.print(num + " ");
         }
 
